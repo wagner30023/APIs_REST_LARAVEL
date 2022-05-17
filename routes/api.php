@@ -30,7 +30,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::namespace('Api')->prefix('products')->group(function(){
     Route::get('/',[ProductController::class,'index']);
     Route::get('/{id}',[ProductController::class,'show']);
-    Route::post('/',[ProductController::class,'save']);
+    Route::post('/',[ProductController::class,'save']); //->middleware('auth.basic');
     Route::put('/',[ProductController::class,'update']);
     Route::delete('/{id}',[ProductController::class,'delete']);
 });
+
+
+// Route::namespace('Api')->group(function(){
+//     // Products route
+//     Route::prefix('products')->group(function(){
+//         Route::get('/',[ProductController::class,'index']);
+//         Route::get('/{id}',[ProductController::class,'show']);
+//         Route::post('/',[ProductController::class,'save'])->middleware('auth.basic');
+//         Route::put('/',[ProductController::class,'update']);
+//         Route::delete('/{id}',[ProductController::class,'delete']);
+//     });
+
+//     Route::resource('users',[UserController::class]);
+// });

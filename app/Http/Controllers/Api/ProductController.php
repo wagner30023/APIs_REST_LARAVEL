@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Http\Requests\ProductRequest;
 
 class ProductController extends Controller
 {
@@ -31,7 +32,7 @@ class ProductController extends Controller
         return response()->json($products);
     }
 
-    public function save(Request $request)
+    public function save(ProductRequest $request)
     {
         $data = $request->all();
         $product = $this->product->create($data);

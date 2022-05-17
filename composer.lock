@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "4ebe52b4c6c6e5ffd47c9383419e30dd",
     "packages": [
         {
             "name": "brick/math",
@@ -4873,6 +4873,29 @@
             "time": "2021-12-08T09:12:39+00:00"
         },
         {
+            "name": "urepo/laravel-ide-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/urepo/laravel-ide-helper.git",
+                "reference": "f6e46e59af7644a7546883adc0aa0519dce331cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/urepo/laravel-ide-helper/zipball/f6e46e59af7644a7546883adc0aa0519dce331cc",
+                "reference": "f6e46e59af7644a7546883adc0aa0519dce331cc",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/urepo/laravel-ide-helper/issues",
+                "source": "https://github.com/urepo/laravel-ide-helper/tree/master"
+            },
+            "time": "2015-06-14T19:24:10+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.4.1",
             "source": {
@@ -7748,7 +7771,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "urepo/laravel-ide-helper": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
